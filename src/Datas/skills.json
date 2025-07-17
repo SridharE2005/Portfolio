@@ -1,0 +1,12 @@
+{
+  "skills": [
+    { "id": 1, "path": "../assets/HTML.png" },
+    { "id": 2, "path": "../assets/CSS.png" },
+    { "id": 3, "path": "../assets/javascript.png" },
+    { "id": 4, "path": "../assets/node.png" },
+    { "id": 5, "path": "../assets/express.png" },
+    { "id": 6, "path": "../assets/react.png" },
+    { "id": 7, "path": "../assets/mysql.png" }
+   
+  ]
+}

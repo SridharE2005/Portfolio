@@ -1,0 +1,25 @@
+.contact-main{
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+}
+.logos{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.logos p{
+    font-size: 40px;
+    margin: 0;
+    
+}
+.logos p a{
+    color: white;
+    
+}

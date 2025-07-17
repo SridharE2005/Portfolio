@@ -1,0 +1,131 @@
+.certificates-main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificates-content {
+    display: flex;
+    width: 92%;
+    height: 90%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-wrapper {
+    display: flex;
+    animation: scroll-left 60s linear infinite;
+}
+
+.certificate-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.certificate-list li {
+    width: 200px;
+    height: 270px;
+    padding: 10px;
+    background-color: #020b14;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 0 0 15px #f9004d;
+    flex-shrink: 0;
+}
+
+.certificate-list li img {
+    width: 200px;
+    height: 150px;
+}
+
+.certificate-list li p {
+    font-size: 13px;
+}
+.scrolling-wrapper{
+    padding-top:20px ;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.certificate-list li:hover{
+    scale: 1.08;
+    transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 1024px) {
+  .certificate-list li {
+    width: 180px;
+    height: 250px;
+  }
+
+  .certificate-list li img {
+    width: 180px;
+    height: 140px;
+  }
+
+  .certificate-list li p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .certificates-content {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .certificate-list {
+    gap: 20px;
+  }
+
+  .certificate-list li {
+    width: 160px;
+    height: 230px;
+  }
+
+  .certificate-list li img {
+    width: 160px;
+    height: 130px;
+  }
+
+  .certificate-list li p {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .scrolling-wrapper {
+    padding-top: 10px;
+  }
+
+  .certificate-list {
+    gap: 15px;
+  }
+
+  .certificate-list li {
+    width: 140px;
+    height: 210px;
+  }
+
+  .certificate-list li img {
+    width: 140px;
+    height: 110px;
+  }
+
+  .certificate-list li p {
+    font-size: 10px;
+  }
+}

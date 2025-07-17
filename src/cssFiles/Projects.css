@@ -1,0 +1,170 @@
+.project-main {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-list {
+    display: flex;
+    width: 100%;
+    padding: 0;
+   
+    justify-content: center;
+    margin-top: 40px;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.list-div{
+    width: 100%;
+   
+}
+.project-list li{
+    position: relative;
+   width: 450px;
+    height: 250px;
+    box-shadow: 0 0 15px #07b6eb;
+    border-radius: 30px 0 30px 0;
+    overflow: hidden;
+    
+    
+
+}
+.project-list li img{
+    width: 450px;
+    height: 250px;
+   border-radius: 30px 0 30px 0;
+
+}
+.project-list li div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.751);
+    
+   border-radius: 30px 0 30px 0;
+
+}
+.project-list li p{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+  transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: x-large;
+    color: white;
+    text-shadow: 0 0 6px #07b6eb;
+}
+.project-list li button{
+     position: absolute;
+    bottom: 50px;
+    left: 190px;
+    padding: 10px;
+    width: 70px;
+    border-radius: 50px;
+    border: none;
+    background-color: aqua;
+    
+}
+.project-list li button:hover{
+    background-color: #f9004d;
+    box-shadow: 0 0 6px aqua;
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
+.project-list li:hover{
+    box-shadow: 0 0 30px #07b6eb;
+}
+.show-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.show-more-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .project-list {
+    gap: 30px;
+  }
+
+  .project-list li,
+  .project-list li img {
+    width: 350px;
+    height: 200px;
+  }
+
+  .project-list li p {
+    font-size: large;
+    top: 45px;
+  }
+
+  .project-list li button {
+    left: 140px;
+    bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .project-list li,
+  .project-list li img {
+    width: 300px;
+    height: 180px;
+  }
+
+  .project-list li p {
+    font-size: 16px;
+    top: 40px;
+  }
+
+  .project-list li button {
+    left: 115px;
+    bottom: 35px;
+    width: 60px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-list li,
+  .project-list li img {
+    width: 260px;
+    height: 160px;
+  }
+
+  .project-list li p {
+    font-size: 14px;
+    top: 35px;
+  }
+
+  .project-list li button {
+    left: 95px;
+    bottom: 30px;
+    width: 55px;
+    font-size: 13px;
+  }
+
+  .show-more-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
